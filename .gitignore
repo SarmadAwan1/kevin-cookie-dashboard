@@ -1,0 +1,12 @@
+﻿# Power BI temp/cache
+*.pbix.cache
+*.pbix.tmp
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Secrets / local env
+.env
+*.secret
+credentials.json
