@@ -1,4 +1,6 @@
 # kevin-cookie-dashboard
+<img width="1429" height="798" alt="Screenshot 2025-09-10 152604" src="https://github.com/user-attachments/assets/97cae6b6-4e76-4dbc-ac08-7962666d4c96" />
+
 Power BI dashboard &amp; SQL + DAX for Kevin Cookie Company
 **Kevin Cookie Company - Sale and Rush Delivery Dashboard**
 
