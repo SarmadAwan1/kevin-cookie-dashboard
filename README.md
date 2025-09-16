@@ -2,47 +2,67 @@
 <img width="1429" height="798" alt="Screenshot 2025-09-10 152604" src="https://github.com/user-attachments/assets/97cae6b6-4e76-4dbc-ac08-7962666d4c96" />
 
 Power BI dashboard &amp; SQL + DAX for Kevin Cookie Company
-**Kevin Cookie Company - Sale and Rush Delivery Dashboard**
+**🍪 Kevin Cookie Company Dashboard**
+**📌 Project Overview**
 
-**1. Project Overview**
+This Power BI dashboard analyzes sales data from the Kevin Cookie Company.
+The goal was to understand revenue, shipments, and order patterns using SQL, DAX, and Power BI.
 
-This project was about analyzing the orders and revenue of Kevin Cookie Company. I built a Power BI dashboard to track daily and monthly performance, and also to see how much rush deliveries contribute to sales.
+**The dataset includes:**
 
-**2. Dataset**
+Orders (with revenue & cookies shipped)
+Shipping type (rush vs. normal)
+Dates (daily and monthly trends)
 
-I started with a CSV file of orders. To practice SQL, I imported it into PostgreSQL (public schema → cookies_orders table). Then I connected Power BI to PostgreSQL.
-The main columns in the data:
-order_id → order reference
-customer_id → customer reference
-order_date → when the order was placed
-cookies_shipped → number of cookies shipped
-revenue → total order revenue
-rush → whether the order was rush (TRUE/FALSE)
+**📊 Dashboard Features**
 
-**3. Steps I Took**
+KPIs (Top Row)
+Total Revenue → Overall revenue generated
+Total Cookies Shipped → Total number of cookies shipped
+Average Orders per Day/Month → Tracks customer activity levels
+Average Revenue per Day/Month → Measures financial performance over time
 
-Loaded the data into PostgreSQL.
-Brought it into Power BI and created a Calendar table.
-Connected Calendar to the orders table on order_date.
-Built DAX measures for total revenue, total orders, cookies shipped, rush vs non-rush, averages, cumulative revenue, etc.
-Designed visuals: KPIs, line chart, pie/donut, and slicers.
+**Visuals**
 
-**4. Dashboard**
+**Sales Over Time (Line Chart)**
 
-KPIs → daily averages, monthly averages, peak revenue day, unique orders.
-Line chart → revenue over time.
-Pie/Donut → rush vs non-rush (orders and revenue).
-Cumulative revenue table → long-term growth.
-Slicers → rush status and date filters.
+Shows revenue trend across dates
+Helps identify growth, seasonal spikes, or slowdowns
+Rush vs. Standard Shipments (Donut Chart)
+Breakdown of how many orders were shipped as rush
+Helps track operational efficiency and customer preferences
 
-**5. Insights**
+**Orders Trend (Line Chart)**
 
-Data covers Dec 2024 – Jun 2025.
-Daily orders ~1.6, monthly orders ~28.
-Rush orders are more than half of all orders and bring in a big share of revenue.
-Peak revenue day hit 14K+.
-Average cookies shipped ~813 per day.
+Shows how many orders are placed daily/monthly
+Useful for spotting busiest times
+Cookies Shipped (Bar Chart)
+Daily/Monthly average of cookies shipped
+Helps in understanding logistics and production planning
 
-**6. Conclusion**
+**🎛️ Filters & Slicers**
 
-The dashboard makes it easier to keep track of orders and revenue, especially the effect of rush deliveries. It highlights trends, shows which days bring in the most revenue, and helps in planning production and shipping.
+Date Slicer → Select any custom date range
+Rush Shipments Filter → Toggle between “Rush” and “Standard”
+Month/Day Drilldowns → Switch between daily and monthly insights
+
+**🔎 Key Insights**
+
+Revenue shows consistent growth with clear peaks during high-demand days.
+Rush shipments account for a smaller share but indicate urgent customer needs.
+Average orders and cookies shipped are higher during specific months → likely seasonal demand.
+Helps management decide on rush shipping capacity and inventory planning.
+
+**🚀 How to Use**
+
+Clone/download this repository.
+Open Kevin_Cookie_Company.pbix in Power BI Desktop.
+Use slicers (date, rush delivery) to interact with the visuals.
+Explore trends and compare KPIs across different time periods.
+
+**🛠️ Tools Used**
+
+PostgreSQL → Data import & preparation
+DAX in Power BI → Measures for averages and totals
+Power BI Desktop → Dashboard building & visuals
+GitHub → Hosting project for portfolio
